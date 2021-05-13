@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <BorderPane prefHeight="184.0" prefWidth="207.0" GridPane.rowIndex="2">
+        <top>
+            <Label prefHeight="0.0" prefWidth="147.0" text="Мы не платим! Мы пьём!" BorderPane.alignment="TOP_CENTER">
+            <BorderPane.margin>
+               <Insets />
+            </BorderPane.margin></Label>
+        </top>
+        <center>
+            <Button onAction="#putOnTableTheGlassAction" text="Стаканчик" />
+        </center>
+      <bottom>
+         <Button mnemonicParsing="false" onAction="#openBottleAction" text="Открыть пиво" BorderPane.alignment="CENTER" />
+      </bottom>
+      <right>
+         <Button mnemonicParsing="false" onAction="#drinkTheBeerAction" text="Выпить" BorderPane.alignment="CENTER" />
+      </right>
+      <left>
+         <Button mnemonicParsing="false" onAction="#pourTheBeerAction" text="Налить" BorderPane.alignment="CENTER" />
+      </left>
+    </BorderPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>
